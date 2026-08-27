@@ -1,0 +1,88 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "preferred_line_length": 80,
+  "soft_wrap": "bounded",
+  "tab_size": 2,
+  "code_lens": "on",
+
+  "languages": {
+    "Python": {
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true
+      },
+      "language_servers": [
+        "pyrefly",
+        "ruff"
+      ],
+      "tab_size": 2,
+    }
+  },
+  "lsp": {
+    "pyrefly": {
+      "settings": {
+        "analysis": {
+          "inlayHintDebounceMs": 0,   // show hints immediately (0 = no debounce)
+          "inlayHints": {
+            "callArgumentNames": "all",          // or "partial" for cleaner hints
+            "functionReturnTypes": true,
+            "pytestParameters": true,           // extra useful for tests
+            "variableTypes": true
+          }
+        }
+      }
+    },
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true,
+    "show_background": false,
+  },
+  "show_edit_predictions": false,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 0
+    }
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false
+  },
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "Gruvbox Light",
+    "dark": "Gruvbox Dark",
+  },
+}

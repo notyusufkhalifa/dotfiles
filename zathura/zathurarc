@@ -1,0 +1,31 @@
+set font 'Iosevka Nerd Font normal 9'
+
+# Behavior
+set selection-clipboard "clipboard"
+set adjust-open "best-fit"
+set pages-per-row 1
+set scroll-step 60
+set scroll-full-overlap 0.05
+set zoom-min 10
+set guioptions ""          # no scrollbar/tabs — cleaner for tiling WMs
+set window-title-basename true
+set statusbar-basename true
+set render-loading true
+
+# ---- Sync (for LaTeX/typst source jumping, if relevant) ----
+set synctex true
+
+# ---- Keybindings (vim-ish, a few QoL additions) ----
+map <C-i> recolor
+map <A-1> zoom in
+map <A-0> zoom out
+map D toggle_page_mode
+map r reload
+map R rotate
+map K scroll up
+map J scroll down
+map H scroll left
+map L scroll right
+map i toggle_index
+map <C-d> scroll half-down
+map <C-u> scroll half-up
