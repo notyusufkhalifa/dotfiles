@@ -185,3 +185,13 @@ bar {
 }
 
 exec --no-startup-id sudo cpupower frequency-set -g performance
+
+exec --no-startup-id xrandr --output VGA-1 -s 1366x768 --left-of eDP-1 --output eDP-1 -s 1600x900
+
+exec --no-startup-id sudo nbfc set -s 100
+
+exec --no-startup-id picom &
+
+exec --no-startup-id feh --bg-scale $HOME/walls/guts.jpg
+
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
