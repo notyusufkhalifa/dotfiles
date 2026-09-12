@@ -25,8 +25,8 @@
     "dock": "left"
   },
   "preferred_line_length": 80,
-  "soft_wrap": "bounded",
-  "tab_size": 2,
+  "soft_wrap": "editor_width",
+  "tab_size": 4,
   "code_lens": "on",
 
   "languages": {
@@ -35,10 +35,10 @@
         "source.organizeImports.ruff": true
       },
       "language_servers": [
-        "pyrefly",
+        "pyright",
         "ruff"
       ],
-      "tab_size": 2,
+      "tab_size": 4,
     }
   },
   "lsp": {
@@ -83,6 +83,6 @@
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Light",
-    "dark": "Gruvbox Dark",
+    "dark": "Rosé Pine",
   },
 }

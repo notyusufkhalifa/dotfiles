@@ -1,13 +1,14 @@
-set font 'Iosevka Nerd Font normal 9'
+set font 'Iosevka Nerd Font Bold 12'
 
 # Behavior
 set selection-clipboard "clipboard"
 set adjust-open "best-fit"
 set pages-per-row 1
+set continuous-hist-save true
 set scroll-step 60
 set scroll-full-overlap 0.05
 set zoom-min 10
-set guioptions ""          # no scrollbar/tabs — cleaner for tiling WMs
+# set guioptions ""          # no scrollbar/tabs — cleaner for tiling WMs
 set window-title-basename true
 set statusbar-basename true
 set render-loading true
